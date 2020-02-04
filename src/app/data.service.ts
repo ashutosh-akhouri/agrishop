@@ -16,4 +16,7 @@ export class DataService {
     return this.http.get('/users');
   }
 
+  checkLogin(user){
+     return this.http.post('/login', user);
+  }
 }
